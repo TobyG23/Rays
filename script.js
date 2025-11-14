@@ -113,3 +113,69 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Initialize calendar
 renderCalendar();
+
+// =============== LANGUAGE SYSTEM ===============
+
+// Get saved language or default to Spanish
+let currentLanguage = localStorage.getItem('language') || 'es';
+
+// Apply language on page load
+document.addEventListener('DOMContentLoaded', function() {
+    applyLanguage(currentLanguage);
+});
+
+// Toggle between languages
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+    localStorage.setItem('language', currentLanguage);
+    applyLanguage(currentLanguage);
+}
+
+// Apply the selected language to all elements
+function applyLanguage(lang) {
+    const langBtn = document.getElementById('langBtn');
+    const langFlag = langBtn.querySelector('.lang-flag');
+    const langText = langBtn.querySelector('.lang-text');
+
+    // Update language button
+    if (lang === 'en') {
+        langFlag.textContent = '🇲🇽';
+        langText.textContent = 'ES';
+    } else {
+        langFlag.textContent = '🇺🇸';
+        langText.textContent = 'EN';
+    }
+
+    // Update all elements with data-en and data-es attributes
+    const elements = document.querySelectorAll('[data-en][data-es]');
+    elements.forEach(element => {
+        const text = lang === 'en' ? element.getAttribute('data-en') : element.getAttribute('data-es');
+        element.textContent = text;
+    });
+
+    // Update placeholders for form inputs
+    const reviewTextarea = document.getElementById('reviewTextarea');
+    if (reviewTextarea) {
+        const placeholderText = lang === 'en' ?
+            reviewTextarea.getAttribute('data-placeholder-en') :
+            reviewTextarea.getAttribute('data-placeholder-es');
+        reviewTextarea.placeholder = placeholderText;
+    }
+
+    const emailInput = document.getElementById('emailInput');
+    if (emailInput) {
+        const placeholderText = lang === 'en' ?
+            emailInput.getAttribute('data-placeholder-en') :
+            emailInput.getAttribute('data-placeholder-es');
+        emailInput.placeholder = placeholderText;
+    }
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+
+    // Update calendar month names
+    const monthElement = document.getElementById('currentMonth');
+    if (monthElement) {
+        monthElement.textContent = currentMonth.toLocaleString(lang === 'es' ? 'es-ES' : 'en-US', { month: 'long', year: 'numeric' });
+    }
+}

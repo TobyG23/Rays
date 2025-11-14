@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ren rays.html index.html)"
+      "Bash(ren rays.html index.html)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

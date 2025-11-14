@@ -5,9 +5,14 @@
 }
 
 :root {
-    --red: #C81C1A;
-    --green: #5FBB46;
-    --yellow: #F4D03F;
+    --red: #DC143C;
+    --red-light: #FF1744;
+    --orange: #E67E22;
+    --orange-bright: #F39C12;
+    --green: #2D6B3E;
+    --green-bright: #27AE60;
+    --yellow: #F1C40F;
+    --yellow-bright: #F4D03F;
     --dark: #1a1a1a;
     --light: #f9f9f9;
     --white: #FFFFFF;
@@ -25,13 +30,13 @@ body {
 
 /* NAVBAR */
 nav {
-    background: linear-gradient(90deg, var(--red) 0%, #A01714 50%, var(--red) 100%);
+    background: linear-gradient(90deg, var(--red) 0%, #6B1417 50%, var(--red) 100%);
     padding: 15px 50px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 8px 32px rgba(200, 28, 26, 0.25);
-    border-bottom: 8px solid var(--green);
+    box-shadow: 0 8px 32px rgba(139, 27, 31, 0.35);
+    border-bottom: 8px solid var(--orange-bright);
 }
 
 .nav-container {
@@ -96,6 +101,40 @@ nav {
 
 .logo:hover {
     transform: scale(1.08);
+}
+
+.language-selector {
+    margin-left: 10px;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn:hover {
+    background: white;
+    color: var(--red);
+    transform: translateY(-2px);
+}
+
+.lang-flag {
+    font-size: 16px;
+}
+
+.lang-text {
+    text-transform: uppercase;
 }
 
 /* HERO - BIG & BOLD */
@@ -195,67 +234,135 @@ nav {
     box-shadow: 0 15px 40px rgba(200, 28, 26, 0.4);
 }
 
-/* FEATURES SECTION */
-.features {
-    background: linear-gradient(135deg, var(--yellow) 0%, #FFF9E6 100%);
+/* MARGARITA SECTION */
+.margarita-section {
+    background: linear-gradient(135deg, var(--green) 0%, #236833 100%);
     padding: 100px 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    max-width: 1400px;
-    margin: 0 auto 0;
+    position: relative;
+    overflow: hidden;
+    border-top: 8px solid var(--yellow);
+    border-bottom: 8px solid var(--orange-bright);
+}
+
+.margarita-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--orange-bright) 0px,
+        var(--orange-bright) 30px,
+        var(--yellow) 30px,
+        var(--yellow) 60px,
+        var(--green-bright) 60px,
+        var(--green-bright) 90px
+    );
+    clip-path: polygon(0 0, 8% 100%, 16% 0, 24% 100%, 32% 0, 40% 100%, 48% 0, 56% 100%, 64% 0, 72% 100%, 80% 0, 88% 100%, 96% 0, 100% 100%, 100% 0);
+    z-index: 1;
+}
+
+.margarita-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.margarita-banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 80px 60px;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 10px solid var(--orange-bright);
+    position: relative;
+    overflow: hidden;
+}
+
+.margarita-banner::before {
+    content: '🍹';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-size: 200px;
+    opacity: 0.1;
+    transform: rotate(15deg);
+}
+
+.margarita-banner::after {
+    content: '🍹';
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    font-size: 200px;
+    opacity: 0.1;
+    transform: rotate(-15deg);
+}
+
+.margarita-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--green);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
     position: relative;
     z-index: 1;
-    border: 8px solid var(--green);
-    box-shadow: 0 20px 60px rgba(95, 187, 70, 0.3);
 }
 
-.features::before {
-    display: none;
-}
-
-.feature {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 30px;
-    border: 3px solid var(--green);
-    transition: all 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 1);
-    border-color: var(--red);
-    box-shadow: 0 15px 40px rgba(95, 187, 70, 0.3);
-}
-
-.feature-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 20px;
-    background: linear-gradient(135deg, var(--red), var(--green));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    box-shadow: 0 10px 30px rgba(200, 28, 26, 0.3);
-    border: 4px solid var(--yellow);
-}
-
-.feature h3 {
-    font-size: 20px;
+.margarita-highlight {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
     font-weight: 700;
-    margin-bottom: 12px;
-    color: var(--red);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: var(--yellow);
+    text-shadow:
+        4px 4px 0px var(--red),
+        8px 8px 0px var(--orange-bright),
+        12px 12px 20px rgba(0,0,0,0.3);
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
 }
 
-.feature p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
+.margarita-description {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.margarita-cta {
+    display: inline-block;
+    padding: 20px 60px;
+    background: linear-gradient(135deg, var(--orange-bright) 0%, var(--orange) 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(243, 156, 18, 0.4);
+    border: 3px solid var(--yellow);
+    position: relative;
+    z-index: 1;
+}
+
+.margarita-cta:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(243, 156, 18, 0.6);
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-bright) 100%);
 }
 
 /* ABOUT SECTION */
@@ -1186,12 +1293,6 @@ footer p {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-    .features {
-        grid-template-columns: 1fr;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 20px;

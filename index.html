@@ -13,15 +13,21 @@
     <nav>
         <div class="nav-container">
             <ul class="nav-links nav-links-left">
-                <li><a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank">PEDIR AHORA</a></li>
-                <li><a href="#gallery">MENÚ</a></li>
-                <li><a href="#events">EVENTOS</a></li>
+                <li><a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" data-en="ORDER NOW" data-es="PEDIR AHORA">PEDIR AHORA</a></li>
+                <li><a href="#gallery" data-en="MENU" data-es="MENÚ">MENÚ</a></li>
+                <li><a href="#events" data-en="EVENTS" data-es="EVENTOS">EVENTOS</a></li>
             </ul>
             <div class="logo"></div>
             <ul class="nav-links nav-links-right">
-                <li><a href="#about">SOBRE NOSOTROS</a></li>
-                <li><a href="#visit">UBICACIÓN</a></li>
-                <li><a href="#reviews">RESEÑAS</a></li>
+                <li><a href="#about" data-en="ABOUT US" data-es="SOBRE NOSOTROS">SOBRE NOSOTROS</a></li>
+                <li><a href="#visit" data-en="LOCATION" data-es="UBICACIÓN">UBICACIÓN</a></li>
+                <li><a href="#reviews" data-en="REVIEWS" data-es="RESEÑAS">RESEÑAS</a></li>
+                <li class="language-selector">
+                    <button id="langBtn" class="lang-btn" onclick="toggleLanguage()">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span class="lang-text">EN</span>
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -30,28 +36,21 @@
     <section class="hero" id="hero">
         <div class="hero-content">
             <div class="hero-logo"></div>
-            <h1>AUTÉNTICA COMIDA MEXICANA</h1>
-            <p>Sabores vibrantes, tradición en cada platillo, experiencia inolvidable</p>
-            <a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" class="cta-btn">ORDENA AHORA</a>
+            <h1 data-en="AUTHENTIC MEXICAN FOOD" data-es="AUTÉNTICA COMIDA MEXICANA">AUTÉNTICA COMIDA MEXICANA</h1>
+            <p data-en="Vibrant flavors, tradition in every dish, unforgettable experience" data-es="Sabores vibrantes, tradición en cada platillo, experiencia inolvidable">Sabores vibrantes, tradición en cada platillo, experiencia inolvidable</p>
+            <a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" class="cta-btn" data-en="ORDER NOW" data-es="ORDENA AHORA">ORDENA AHORA</a>
         </div>
     </section>
 
-    <!-- FEATURES -->
-    <section class="features">
-        <div class="feature">
-            <div class="feature-icon">🔥</div>
-            <h3>Recetas Auténticas</h3>
-            <p>Preparadas con técnicas tradicionales mexicanas y ingredientes frescos de calidad superior</p>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">👨‍🍳</div>
-            <h3>Chefs Expertos</h3>
-            <p>Nuestro equipo dedicado a crear platillos memorables con pasión y experiencia</p>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">⭐</div>
-            <h3>Calidad Premium</h3>
-            <p>Ingredientes seleccionados, técnicas comprobadas, sabor excepcional garantizado</p>
+    <!-- BEST MARGARITA SECTION -->
+    <section class="margarita-section">
+        <div class="margarita-content">
+            <div class="margarita-banner">
+                <h2 class="margarita-title" data-en="Place of the award winning" data-es="Hogar de la premiada">Hogar de la premiada</h2>
+                <h1 class="margarita-highlight" data-en="MARGARITA" data-es="MARGARITA">MARGARITA</h1>
+                <p class="margarita-description" data-en="The best margarita in the city! Experience the perfect blend of premium tequila, fresh lime juice, and authentic Mexican flavor. Winner of multiple local awards and customer favorites." data-es="¡La mejor margarita de la ciudad! Experimenta la mezcla perfecta de tequila premium, jugo de limón fresco y auténtico sabor mexicano. Ganadora de múltiples premios locales y favorita de nuestros clientes.">¡La mejor margarita de la ciudad! Experimenta la mezcla perfecta de tequila premium, jugo de limón fresco y auténtico sabor mexicano. Ganadora de múltiples premios locales y favorita de nuestros clientes.</p>
+                <a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" class="margarita-cta" data-en="TRY OUR MARGARITAS" data-es="PRUEBA NUESTRAS MARGARITAS">PRUEBA NUESTRAS MARGARITAS</a>
+            </div>
         </div>
     </section>
 
@@ -59,10 +58,10 @@
     <section class="about-section" id="about">
         <div class="about-container">
             <div class="about-content">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>We're passionate about serving delicious, authentic Mexican cuisine in a warm and inviting atmosphere. Whether you're here to enjoy a meal with friends and family or just stopping by to satisfy your cravings, we're dedicated to making your experience unforgettable.</p>
-                <p>Thank you for supporting us—we can't wait to serve you again soon!</p>
-                <a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" class="cta-btn">ORDENA AHORA</a>
+                <h2 data-en="ABOUT US" data-es="SOBRE NOSOTROS">SOBRE NOSOTROS</h2>
+                <p data-en="We're passionate about serving delicious, authentic Mexican cuisine in a warm and inviting atmosphere. Whether you're here to enjoy a meal with friends and family or just stopping by to satisfy your cravings, we're dedicated to making your experience unforgettable." data-es="Somos apasionados por servir deliciosa y auténtica comida mexicana en un ambiente cálido y acogedor. Ya sea que vengas a disfrutar una comida con amigos y familia o simplemente pases a satisfacer tus antojos, nos dedicamos a hacer tu experiencia inolvidable.">Somos apasionados por servir deliciosa y auténtica comida mexicana en un ambiente cálido y acogedor. Ya sea que vengas a disfrutar una comida con amigos y familia o simplemente pases a satisfacer tus antojos, nos dedicamos a hacer tu experiencia inolvidable.</p>
+                <p data-en="Thank you for supporting us—we can't wait to serve you again soon!" data-es="¡Gracias por apoyarnos, no podemos esperar para servirte de nuevo pronto!">¡Gracias por apoyarnos, no podemos esperar para servirte de nuevo pronto!</p>
+                <a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" class="cta-btn" data-en="ORDER NOW" data-es="ORDENA AHORA">ORDENA AHORA</a>
             </div>
             <div class="about-image"></div>
         </div>
@@ -71,39 +70,39 @@
     <!-- GALLERY GRID -->
     <section class="gallery-section" id="gallery">
         <div class="section-header">
-            <h2>NUESTROS PLATILLOS</h2>
-            <p>Cada platillo es una obra de arte culinaria diseñada para deleitar tu paladar</p>
+            <h2 data-en="OUR DISHES" data-es="NUESTROS PLATILLOS">NUESTROS PLATILLOS</h2>
+            <p data-en="Each dish is a culinary work of art designed to delight your palate" data-es="Cada platillo es una obra de arte culinaria diseñada para deleitar tu paladar">Cada platillo es una obra de arte culinaria diseñada para deleitar tu paladar</p>
         </div>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <div class="gallery-overlay">
                     <div class="gallery-text">
-                        <h3>Platos Principales</h3>
-                        <p>Combinaciones perfectas de sabor y tradición</p>
+                        <h3 data-en="Main Courses" data-es="Platos Principales">Platos Principales</h3>
+                        <p data-en="Perfect combinations of flavor and tradition" data-es="Combinaciones perfectas de sabor y tradición">Combinaciones perfectas de sabor y tradición</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="gallery-overlay">
                     <div class="gallery-text">
-                        <h3>Postres Deliciosos</h3>
-                        <p>El toque dulce perfecto para tu comida</p>
+                        <h3 data-en="Delicious Desserts" data-es="Postres Deliciosos">Postres Deliciosos</h3>
+                        <p data-en="The perfect sweet touch for your meal" data-es="El toque dulce perfecto para tu comida">El toque dulce perfecto para tu comida</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="gallery-overlay">
                     <div class="gallery-text">
-                        <h3>Especialidades de Casa</h3>
-                        <p>Las favoritas de nuestros clientes desde hace años</p>
+                        <h3 data-en="House Specialties" data-es="Especialidades de Casa">Especialidades de Casa</h3>
+                        <p data-en="Our customers' favorites for years" data-es="Las favoritas de nuestros clientes desde hace años">Las favoritas de nuestros clientes desde hace años</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item">
                 <div class="gallery-overlay">
                     <div class="gallery-text">
-                        <h3>Más Opciones</h3>
-                        <p>Descubre nuestra variada carta de auténtica comida mexicana</p>
+                        <h3 data-en="More Options" data-es="Más Opciones">Más Opciones</h3>
+                        <p data-en="Discover our varied menu of authentic Mexican food" data-es="Descubre nuestra variada carta de auténtica comida mexicana">Descubre nuestra variada carta de auténtica comida mexicana</p>
                     </div>
                 </div>
             </div>
@@ -113,13 +112,13 @@
     <!-- EVENTS SECTION -->
     <section class="events-section" id="events">
         <div class="section-header">
-            <h2>PRÓXIMOS EVENTOS</h2>
-            <p>Únete a nuestras celebraciones especiales y promociones exclusivas</p>
+            <h2 data-en="UPCOMING EVENTS" data-es="PRÓXIMOS EVENTOS">PRÓXIMOS EVENTOS</h2>
+            <p data-en="Join our special celebrations and exclusive promotions" data-es="Únete a nuestras celebraciones especiales y promociones exclusivas">Únete a nuestras celebraciones especiales y promociones exclusivas</p>
         </div>
 
         <div class="events-tabs-container">
-            <button class="events-tab-btn active" onclick="switchTab('upcoming')">PRÓXIMOS EVENTOS</button>
-            <button class="events-tab-btn" onclick="switchTab('calendar')">CALENDARIO</button>
+            <button class="events-tab-btn active" onclick="switchTab('upcoming')" data-en="UPCOMING EVENTS" data-es="PRÓXIMOS EVENTOS">PRÓXIMOS EVENTOS</button>
+            <button class="events-tab-btn" onclick="switchTab('calendar')" data-en="CALENDAR" data-es="CALENDARIO">CALENDARIO</button>
         </div>
 
         <!-- UPCOMING EVENTS TAB -->
@@ -131,8 +130,8 @@
                         <span class="event-month">NOV</span>
                     </div>
                     <div class="event-info">
-                        <h3>Martes de Tacos</h3>
-                        <p>Tacos al 50% de descuento toda la noche</p>
+                        <h3 data-en="Taco Tuesday" data-es="Martes de Tacos">Martes de Tacos</h3>
+                        <p data-en="50% off tacos all night long" data-es="Tacos al 50% de descuento toda la noche">Tacos al 50% de descuento toda la noche</p>
                         <span class="event-time">5:00 PM - 10:00 PM</span>
                     </div>
                 </div>
@@ -143,8 +142,8 @@
                         <span class="event-month">NOV</span>
                     </div>
                     <div class="event-info">
-                        <h3>Festival de Margaritas</h3>
-                        <p>Margaritas especiales con precios increíbles</p>
+                        <h3 data-en="Margarita Festival" data-es="Festival de Margaritas">Festival de Margaritas</h3>
+                        <p data-en="Special margaritas with incredible prices" data-es="Margaritas especiales con precios increíbles">Margaritas especiales con precios increíbles</p>
                         <span class="event-time">6:00 PM - 11:00 PM</span>
                     </div>
                 </div>
@@ -155,8 +154,8 @@
                         <span class="event-month">NOV</span>
                     </div>
                     <div class="event-info">
-                        <h3>Noche de Música en Vivo</h3>
-                        <p>Música mexicana tradicional mientras disfrutas de nuestra comida</p>
+                        <h3 data-en="Live Music Night" data-es="Noche de Música en Vivo">Noche de Música en Vivo</h3>
+                        <p data-en="Traditional Mexican music while you enjoy our food" data-es="Música mexicana tradicional mientras disfrutas de nuestra comida">Música mexicana tradicional mientras disfrutas de nuestra comida</p>
                         <span class="event-time">7:00 PM - 11:00 PM</span>
                     </div>
                 </div>
@@ -167,18 +166,18 @@
         <div id="calendar" class="events-tab-content">
             <div class="calendar-container">
                 <div class="calendar-controls">
-                    <button onclick="prevMonth()">← Anterior</button>
+                    <button onclick="prevMonth()" data-en="← Previous" data-es="← Anterior">← Anterior</button>
                     <h3 id="currentMonth">Noviembre 2024</h3>
-                    <button onclick="nextMonth()">Siguiente →</button>
+                    <button onclick="nextMonth()" data-en="Next →" data-es="Siguiente →">Siguiente →</button>
                 </div>
                 <div class="calendar-grid">
-                    <div class="calendar-day-header">Dom</div>
-                    <div class="calendar-day-header">Lun</div>
-                    <div class="calendar-day-header">Mar</div>
-                    <div class="calendar-day-header">Mié</div>
-                    <div class="calendar-day-header">Jue</div>
-                    <div class="calendar-day-header">Vie</div>
-                    <div class="calendar-day-header">Sáb</div>
+                    <div class="calendar-day-header" data-en="Sun" data-es="Dom">Dom</div>
+                    <div class="calendar-day-header" data-en="Mon" data-es="Lun">Lun</div>
+                    <div class="calendar-day-header" data-en="Tue" data-es="Mar">Mar</div>
+                    <div class="calendar-day-header" data-en="Wed" data-es="Mié">Mié</div>
+                    <div class="calendar-day-header" data-en="Thu" data-es="Jue">Jue</div>
+                    <div class="calendar-day-header" data-en="Fri" data-es="Vie">Vie</div>
+                    <div class="calendar-day-header" data-en="Sat" data-es="Sáb">Sáb</div>
                     <div id="calendarDays"></div>
                 </div>
             </div>
@@ -187,20 +186,20 @@
 
     <!-- SPECIALS -->
     <section class="specials-section" id="specials">
-        <h2>OFERTAS ESPECIALES</h2>
-        <p>Disfruta de nuestras promociones exclusivas y combos irresistibles</p>
+        <h2 data-en="SPECIAL OFFERS" data-es="OFERTAS ESPECIALES">OFERTAS ESPECIALES</h2>
+        <p data-en="Enjoy our exclusive promotions and irresistible combos" data-es="Disfruta de nuestras promociones exclusivas y combos irresistibles">Disfruta de nuestras promociones exclusivas y combos irresistibles</p>
         <div class="specials-grid">
             <div class="special-item">
-                <h3>Combo Familiar</h3>
-                <p>Variedad de platillos principales con acompañamientos. Perfecto para compartir en familia</p>
+                <h3 data-en="Family Combo" data-es="Combo Familiar">Combo Familiar</h3>
+                <p data-en="Variety of main dishes with sides. Perfect for sharing with family" data-es="Variedad de platillos principales con acompañamientos. Perfecto para compartir en familia">Variedad de platillos principales con acompañamientos. Perfecto para compartir en familia</p>
             </div>
             <div class="special-item">
-                <h3>Happy Hour</h3>
-                <p>Bebidas con descuento especial en horarios seleccionados. ¡Vuelve por más!</p>
+                <h3 data-en="Happy Hour" data-es="Happy Hour">Happy Hour</h3>
+                <p data-en="Drinks with special discount at selected hours. Come back for more!" data-es="Bebidas con descuento especial en horarios seleccionados. ¡Vuelve por más!">Bebidas con descuento especial en horarios seleccionados. ¡Vuelve por más!</p>
             </div>
             <div class="special-item">
-                <h3>Menú del Día</h3>
-                <p>Platillos rotatorios con precio especial. Descubre algo nuevo cada día</p>
+                <h3 data-en="Daily Menu" data-es="Menú del Día">Menú del Día</h3>
+                <p data-en="Rotating dishes with special price. Discover something new every day" data-es="Platillos rotatorios con precio especial. Descubre algo nuevo cada día">Platillos rotatorios con precio especial. Descubre algo nuevo cada día</p>
             </div>
         </div>
     </section>
@@ -209,23 +208,23 @@
     <section class="visit-section" id="visit">
         <div class="visit-container">
             <div class="visit-content">
-                <h2>VEN A VERNOS</h2>
-                <p>Ubicados en el corazón de Katy, TX. Un lugar acogedor donde disfrutas de auténtica comida mexicana con familia y amigos.</p>
-                
+                <h2 data-en="COME VISIT US" data-es="VEN A VERNOS">VEN A VERNOS</h2>
+                <p data-en="Located in the heart of Katy, TX. A cozy place where you enjoy authentic Mexican food with family and friends." data-es="Ubicados en el corazón de Katy, TX. Un lugar acogedor donde disfrutas de auténtica comida mexicana con familia y amigos.">Ubicados en el corazón de Katy, TX. Un lugar acogedor donde disfrutas de auténtica comida mexicana con familia y amigos.</p>
+
                 <div class="visit-info">
-                    <h3>📍 UBICACIÓN</h3>
+                    <h3 data-en="📍 LOCATION" data-es="📍 UBICACIÓN">📍 UBICACIÓN</h3>
                     <p>870 S Mason Rd STE 152</p>
                     <p>Katy, TX 77450</p>
                 </div>
 
                 <div class="visit-info">
-                    <h3>🕐 HORARIOS</h3>
-                    <p><strong>Lunes - Jueves:</strong> 11:00 am - 9:30 pm</p>
-                    <p><strong>Viernes - Sábado:</strong> 11:00 am - 10:00 pm</p>
-                    <p><strong>Domingo:</strong> 11:00 am - 9:00 pm</p>
+                    <h3 data-en="🕐 HOURS" data-es="🕐 HORARIOS">🕐 HORARIOS</h3>
+                    <p><strong data-en="Monday - Thursday:" data-es="Lunes - Jueves:">Lunes - Jueves:</strong> 11:00 am - 9:30 pm</p>
+                    <p><strong data-en="Friday - Saturday:" data-es="Viernes - Sábado:">Viernes - Sábado:</strong> 11:00 am - 10:00 pm</p>
+                    <p><strong data-en="Sunday:" data-es="Domingo:">Domingo:</strong> 11:00 am - 9:00 pm</p>
                 </div>
 
-                <a href="tel:+12813926681" class="phone-btn">📞 LLAMAR AHORA</a>
+                <a href="tel:+12813926681" class="phone-btn" data-en="📞 CALL NOW" data-es="📞 LLAMAR AHORA">📞 LLAMAR AHORA</a>
             </div>
             <div class="visit-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.5412547984377!2d-95.81289232346936!3d29.761697874693827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c7e6c7e6c7e7%3A0x7e7e7e7e7e7e7e7e!2s870%20S%20Mason%20Rd%20%23152%2C%20Katy%2C%20TX%2077450!5e0!3m2!1ses!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -237,58 +236,58 @@
     <section class="review-section" id="reviews">
         <div class="review-container">
             <div class="review-left">
-                <h2>¿QUÉ DICEN NUESTROS CLIENTES?</h2>
-                
+                <h2 data-en="WHAT OUR CUSTOMERS SAY?" data-es="¿QUÉ DICEN NUESTROS CLIENTES?">¿QUÉ DICEN NUESTROS CLIENTES?</h2>
+
                 <div class="review-card">
                     <div class="review-author">🌮 La Gulsada - Lee</div>
-                    <div class="review-text">"¡Increíble! La carne se deshace en la boca. Las porciones son generosas. Volvemos definitivamente."</div>
+                    <div class="review-text" data-en="Amazing! The meat melts in your mouth. The portions are generous. We're definitely coming back." data-es="¡Increíble! La carne se deshace en la boca. Las porciones son generosas. Volvemos definitivamente.">"¡Increíble! La carne se deshace en la boca. Las porciones son generosas. Volvemos definitivamente."</div>
                 </div>
 
                 <div class="review-card">
                     <div class="review-author">🌯 Burritos Especiales - María</div>
-                    <div class="review-text">"Los mejores sabores mexicanos que he probado en Texas. El servicio es excelente y los precios justos."</div>
+                    <div class="review-text" data-en="The best Mexican flavors I've tasted in Texas. The service is excellent and prices are fair." data-es="Los mejores sabores mexicanos que he probado en Texas. El servicio es excelente y los precios justos.">"Los mejores sabores mexicanos que he probado en Texas. El servicio es excelente y los precios justos."</div>
                 </div>
 
                 <div class="review-card">
                     <div class="review-author">🔥 Enchiladas Rojas - Carlos</div>
-                    <div class="review-text">"Auténtico, fresco, delicioso. Ese es Ray's. Recomendado 100%. Ray's es EXCELENTE."</div>
+                    <div class="review-text" data-en="Authentic, fresh, delicious. That's Ray's. 100% recommended. Ray's is EXCELLENT." data-es="Auténtico, fresco, delicioso. Ese es Ray's. Recomendado 100%. Ray's es EXCELENTE.">"Auténtico, fresco, delicioso. Ese es Ray's. Recomendado 100%. Ray's es EXCELENTE."</div>
                 </div>
             </div>
 
             <div class="review-right">
                 <form class="review-form" onsubmit="handleSubmit(event)">
-                    <h3>DEJA TU RESEÑA</h3>
-                    
+                    <h3 data-en="LEAVE YOUR REVIEW" data-es="DEJA TU RESEÑA">DEJA TU RESEÑA</h3>
+
                     <div class="form-group">
-                        <label>¿Qué ubicación visitaste?</label>
+                        <label data-en="Which location did you visit?" data-es="¿Qué ubicación visitaste?">¿Qué ubicación visitaste?</label>
                         <select required>
-                            <option value="">Selecciona una ubicación</option>
+                            <option value="" data-en="Select a location" data-es="Selecciona una ubicación">Selecciona una ubicación</option>
                             <option value="katy">Katy, TX</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label>¿Qué platillo probaste?</label>
+                        <label data-en="Which dish did you try?" data-es="¿Qué platillo probaste?">¿Qué platillo probaste?</label>
                         <select required>
-                            <option value="">Selecciona un platillo</option>
+                            <option value="" data-en="Select a dish" data-es="Selecciona un platillo">Selecciona un platillo</option>
                             <option value="tacos">Tacos</option>
                             <option value="enchiladas">Enchiladas</option>
                             <option value="burritos">Burritos</option>
-                            <option value="otro">Otro</option>
+                            <option value="otro" data-en="Other" data-es="Otro">Otro</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label>Tu reseña</label>
-                        <textarea placeholder="Cuéntanos tu experiencia..." required></textarea>
+                        <label data-en="Your review" data-es="Tu reseña">Tu reseña</label>
+                        <textarea id="reviewTextarea" placeholder="Cuéntanos tu experiencia..." data-placeholder-en="Tell us about your experience..." data-placeholder-es="Cuéntanos tu experiencia..." required></textarea>
                     </div>
 
                     <div class="form-group">
-                        <label>Tu correo</label>
-                        <input type="email" placeholder="tu@email.com" required>
+                        <label data-en="Your email" data-es="Tu correo">Tu correo</label>
+                        <input type="email" id="emailInput" placeholder="tu@email.com" data-placeholder-en="your@email.com" data-placeholder-es="tu@email.com" required>
                     </div>
 
-                    <button type="submit" class="submit-btn">ENVIAR RESEÑA</button>
+                    <button type="submit" class="submit-btn" data-en="SEND REVIEW" data-es="ENVIAR RESEÑA">ENVIAR RESEÑA</button>
                 </form>
             </div>
         </div>
@@ -296,9 +295,9 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2024 Ray's Mexican Restaurant - Auténtica Comida Mexicana en Katy, TX</p>
+        <p data-en="&copy; 2024 Ray's Mexican Restaurant - Authentic Mexican Food in Katy, TX" data-es="&copy; 2024 Ray's Mexican Restaurant - Auténtica Comida Mexicana en Katy, TX">&copy; 2024 Ray's Mexican Restaurant - Auténtica Comida Mexicana en Katy, TX</p>
         <p>📍 870 S Mason Rd STE 152 | 📞 (281) 392-6681</p>
-        <p>¡Síguenos en redes sociales para ofertas exclusivas!</p>
+        <p data-en="Follow us on social media for exclusive offers!" data-es="¡Síguenos en redes sociales para ofertas exclusivas!">¡Síguenos en redes sociales para ofertas exclusivas!</p>
     </footer>
 
     <script src="script.js"></script>
