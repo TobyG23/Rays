@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ren rays.html index.html)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

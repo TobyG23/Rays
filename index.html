@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray's Mexican Restaurant - Auténtica Comida Mexicana en Katy, TX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links nav-links-left">
+                <li><a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank">PEDIR AHORA</a></li>
+                <li><a href="#gallery">MENÚ</a></li>
+                <li><a href="#events">EVENTOS</a></li>
+            </ul>
+            <div class="logo"></div>
+            <ul class="nav-links nav-links-right">
+                <li><a href="#about">SOBRE NOSOTROS</a></li>
+                <li><a href="#visit">UBICACIÓN</a></li>
+                <li><a href="#reviews">RESEÑAS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-logo"></div>
+            <h1>AUTÉNTICA COMIDA MEXICANA</h1>
+            <p>Sabores vibrantes, tradición en cada platillo, experiencia inolvidable</p>
+            <a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" class="cta-btn">ORDENA AHORA</a>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">🔥</div>
+            <h3>Recetas Auténticas</h3>
+            <p>Preparadas con técnicas tradicionales mexicanas y ingredientes frescos de calidad superior</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">👨‍🍳</div>
+            <h3>Chefs Expertos</h3>
+            <p>Nuestro equipo dedicado a crear platillos memorables con pasión y experiencia</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">⭐</div>
+            <h3>Calidad Premium</h3>
+            <p>Ingredientes seleccionados, técnicas comprobadas, sabor excepcional garantizado</p>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>We're passionate about serving delicious, authentic Mexican cuisine in a warm and inviting atmosphere. Whether you're here to enjoy a meal with friends and family or just stopping by to satisfy your cravings, we're dedicated to making your experience unforgettable.</p>
+                <p>Thank you for supporting us—we can't wait to serve you again soon!</p>
+                <a href="https://popmenu.com/ray-s-mexican-restaurant" target="_blank" class="cta-btn">ORDENA AHORA</a>
+            </div>
+            <div class="about-image"></div>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <h2>NUESTROS PLATILLOS</h2>
+            <p>Cada platillo es una obra de arte culinaria diseñada para deleitar tu paladar</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <div class="gallery-text">
+                        <h3>Platos Principales</h3>
+                        <p>Combinaciones perfectas de sabor y tradición</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <div class="gallery-text">
+                        <h3>Postres Deliciosos</h3>
+                        <p>El toque dulce perfecto para tu comida</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <div class="gallery-text">
+                        <h3>Especialidades de Casa</h3>
+                        <p>Las favoritas de nuestros clientes desde hace años</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-overlay">
+                    <div class="gallery-text">
+                        <h3>Más Opciones</h3>
+                        <p>Descubre nuestra variada carta de auténtica comida mexicana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section class="events-section" id="events">
+        <div class="section-header">
+            <h2>PRÓXIMOS EVENTOS</h2>
+            <p>Únete a nuestras celebraciones especiales y promociones exclusivas</p>
+        </div>
+
+        <div class="events-tabs-container">
+            <button class="events-tab-btn active" onclick="switchTab('upcoming')">PRÓXIMOS EVENTOS</button>
+            <button class="events-tab-btn" onclick="switchTab('calendar')">CALENDARIO</button>
+        </div>
+
+        <!-- UPCOMING EVENTS TAB -->
+        <div id="upcoming" class="events-tab-content active">
+            <div class="events-cards-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day">15</span>
+                        <span class="event-month">NOV</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Martes de Tacos</h3>
+                        <p>Tacos al 50% de descuento toda la noche</p>
+                        <span class="event-time">5:00 PM - 10:00 PM</span>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day">20</span>
+                        <span class="event-month">NOV</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Festival de Margaritas</h3>
+                        <p>Margaritas especiales con precios increíbles</p>
+                        <span class="event-time">6:00 PM - 11:00 PM</span>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="event-day">28</span>
+                        <span class="event-month">NOV</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Noche de Música en Vivo</h3>
+                        <p>Música mexicana tradicional mientras disfrutas de nuestra comida</p>
+                        <span class="event-time">7:00 PM - 11:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CALENDAR TAB -->
+        <div id="calendar" class="events-tab-content">
+            <div class="calendar-container">
+                <div class="calendar-controls">
+                    <button onclick="prevMonth()">← Anterior</button>
+                    <h3 id="currentMonth">Noviembre 2024</h3>
+                    <button onclick="nextMonth()">Siguiente →</button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">Dom</div>
+                    <div class="calendar-day-header">Lun</div>
+                    <div class="calendar-day-header">Mar</div>
+                    <div class="calendar-day-header">Mié</div>
+                    <div class="calendar-day-header">Jue</div>
+                    <div class="calendar-day-header">Vie</div>
+                    <div class="calendar-day-header">Sáb</div>
+                    <div id="calendarDays"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALS -->
+    <section class="specials-section" id="specials">
+        <h2>OFERTAS ESPECIALES</h2>
+        <p>Disfruta de nuestras promociones exclusivas y combos irresistibles</p>
+        <div class="specials-grid">
+            <div class="special-item">
+                <h3>Combo Familiar</h3>
+                <p>Variedad de platillos principales con acompañamientos. Perfecto para compartir en familia</p>
+            </div>
+            <div class="special-item">
+                <h3>Happy Hour</h3>
+                <p>Bebidas con descuento especial en horarios seleccionados. ¡Vuelve por más!</p>
+            </div>
+            <div class="special-item">
+                <h3>Menú del Día</h3>
+                <p>Platillos rotatorios con precio especial. Descubre algo nuevo cada día</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISIT US -->
+    <section class="visit-section" id="visit">
+        <div class="visit-container">
+            <div class="visit-content">
+                <h2>VEN A VERNOS</h2>
+                <p>Ubicados en el corazón de Katy, TX. Un lugar acogedor donde disfrutas de auténtica comida mexicana con familia y amigos.</p>
+                
+                <div class="visit-info">
+                    <h3>📍 UBICACIÓN</h3>
+                    <p>870 S Mason Rd STE 152</p>
+                    <p>Katy, TX 77450</p>
+                </div>
+
+                <div class="visit-info">
+                    <h3>🕐 HORARIOS</h3>
+                    <p><strong>Lunes - Jueves:</strong> 11:00 am - 9:30 pm</p>
+                    <p><strong>Viernes - Sábado:</strong> 11:00 am - 10:00 pm</p>
+                    <p><strong>Domingo:</strong> 11:00 am - 9:00 pm</p>
+                </div>
+
+                <a href="tel:+12813926681" class="phone-btn">📞 LLAMAR AHORA</a>
+            </div>
+            <div class="visit-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.5412547984377!2d-95.81289232346936!3d29.761697874693827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c7e6c7e6c7e7%3A0x7e7e7e7e7e7e7e7e!2s870%20S%20Mason%20Rd%20%23152%2C%20Katy%2C%20TX%2077450!5e0!3m2!1ses!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="review-section" id="reviews">
+        <div class="review-container">
+            <div class="review-left">
+                <h2>¿QUÉ DICEN NUESTROS CLIENTES?</h2>
+                
+                <div class="review-card">
+                    <div class="review-author">🌮 La Gulsada - Lee</div>
+                    <div class="review-text">"¡Increíble! La carne se deshace en la boca. Las porciones son generosas. Volvemos definitivamente."</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author">🌯 Burritos Especiales - María</div>
+                    <div class="review-text">"Los mejores sabores mexicanos que he probado en Texas. El servicio es excelente y los precios justos."</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author">🔥 Enchiladas Rojas - Carlos</div>
+                    <div class="review-text">"Auténtico, fresco, delicioso. Ese es Ray's. Recomendado 100%. Ray's es EXCELENTE."</div>
+                </div>
+            </div>
+
+            <div class="review-right">
+                <form class="review-form" onsubmit="handleSubmit(event)">
+                    <h3>DEJA TU RESEÑA</h3>
+                    
+                    <div class="form-group">
+                        <label>¿Qué ubicación visitaste?</label>
+                        <select required>
+                            <option value="">Selecciona una ubicación</option>
+                            <option value="katy">Katy, TX</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>¿Qué platillo probaste?</label>
+                        <select required>
+                            <option value="">Selecciona un platillo</option>
+                            <option value="tacos">Tacos</option>
+                            <option value="enchiladas">Enchiladas</option>
+                            <option value="burritos">Burritos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tu reseña</label>
+                        <textarea placeholder="Cuéntanos tu experiencia..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tu correo</label>
+                        <input type="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">ENVIAR RESEÑA</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Ray's Mexican Restaurant - Auténtica Comida Mexicana en Katy, TX</p>
+        <p>📍 870 S Mason Rd STE 152 | 📞 (281) 392-6681</p>
+        <p>¡Síguenos en redes sociales para ofertas exclusivas!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
