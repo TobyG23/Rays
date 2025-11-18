@@ -27,15 +27,16 @@ body {
 /* NAVBAR */
 .navbar {
     background: #ffaa01;
-    padding: 80px 50px 100px;
+    padding: 5px 50px 40px;
+    margin-top: -30px;
     position: relative;
     z-index: 1000;
 }
 
 .banderines {
     position: absolute;
-    top: 0;
-    width: 85%;
+    top: 60px;
+    width: 95%;
     height: auto;
     z-index: 1002;
     pointer-events: none;
@@ -64,7 +65,7 @@ body {
     justify-content: center;
     background: #e62701;
     border-radius: 50px;
-    padding: 15px 40px;
+    padding: 15px 50px;
 }
 
 .nav-links {
@@ -79,7 +80,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition: all 0.3s ease;
@@ -94,12 +95,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .logo {
-    width: 300px;
-    height: 180px;
+    width: 280px;
+    height: 170px;
     background: url('../images/rays-logo.png') center/contain no-repeat;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
@@ -109,14 +110,15 @@ body {
     background: #ffaa01;
     position: relative;
     overflow: hidden;
-    min-height: 500px;
+    min-height: 600px;
+    margin-top: -20px;
 }
 
 .flores-hero {
     position: absolute;
-    top: -75px;
+    top: -25px;
     right: 0;
-    width: 1000px;
+    width: 2100px;
     height: auto;
     z-index: 100;
     pointer-events: none;
@@ -128,7 +130,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    min-height: 500px;
+    min-height: 600px;
+    padding: 40px 0;
     position: relative;
     z-index: 2;
 }
@@ -149,15 +152,15 @@ body {
 }
 
 .hero-content {
-    padding: 60px;
+    padding: 40px 60px;
     text-align: left;
 }
 
 .hero-content h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 48px;
+    font-family: 'Spectral', serif;
+    font-size: 77px;
     font-weight: 600;
-    color: #bb5d02;
+    color: #7c1623;
     margin-bottom: 0;
     line-height: 1;
 }
@@ -166,7 +169,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 120px;
     font-weight: 700;
-    color: #fffeef;
+    color: #ffffff;
     letter-spacing: 4px;
     line-height: 0.9;
     margin: 10px 0;
@@ -174,11 +177,11 @@ body {
 }
 
 .hero-content h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Spectral', serif;
     font-size: 32px;
     font-weight: 700;
     font-style: italic;
-    color: #dc2900;
+    color: #e52802;
     margin-top: 10px;
     transition: opacity 0.5s ease-in-out;
 }
@@ -328,16 +331,16 @@ body {
 
 /* VISIT US SECTION */
 .visit-us {
-    background: linear-gradient(135deg, var(--orange) 0%, #FF7A33 100%);
+    background: linear-gradient(135deg, #ffa900 0%, #e69500 100%);
     position: relative;
     overflow: hidden;
 }
 
 .flores-visit {
     position: absolute;
-    bottom: -205px;
+    bottom: -305px;
     right: 0;
-    width: 900px;
+    width: 1100px;
     height: auto;
     z-index: 100;
     pointer-events: none;
@@ -365,7 +368,7 @@ body {
 }
 
 .visit-image img {
-    width: 720px;
+    width: 550px;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -377,12 +380,13 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-    width: 100px;
+    width: 180px;
     background: linear-gradient(
         to left,
-        rgba(255, 138, 66, 1) 0%,
-        rgba(255, 138, 66, 0.7) 30%,
-        rgba(255, 138, 66, 0.4) 60%,
+        rgba(255, 169, 0, 1) 0%,
+        rgba(255, 169, 0, 0.9) 20%,
+        rgba(255, 169, 0, 0.7) 40%,
+        rgba(255, 169, 0, 0.4) 70%,
         transparent 100%
     );
     pointer-events: none;
@@ -398,76 +402,97 @@ body {
     position: relative;
     z-index: 3;
     max-width: 500px;
-    margin-left: 590px;
+    margin-left: 480px;
 }
 
 .visit-content h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 72px;
+    font-size: 50px;
     letter-spacing: 3px;
     margin-bottom: 10px;
     color: white;
-    margin-left: 120px;
+    margin-left: 200px;
+    position: relative;
+    top: -80px;
 }
 
 .visit-content h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 48px;
+    font-family: 'Spectral', serif;
+    font-size: 42px;
+    font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 30px;
-    color: white;
-    margin-left: 120px;
+    color: #ef0000;
+    margin-left: 155px;
+    position: relative;
+    top: -80px;
 }
 
 .visit-content .address {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
     font-weight: 500;
-    margin-left: 120px;
+    font-style: italic;
+    color: #ffffff;
+    margin-left: 80px;
+    position: relative;
+    top: -95px;
 }
 
 .visit-content .phone {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
+    font-style: italic;
+    color: #ffffff;
     margin-bottom: 30px;
-    margin-left: 120px;
+    margin-left: 80px;
+    position: relative;
+    top: -95px;
 }
 
 .visit-content .hours {
     margin-top: 30px;
-    margin-left: 120px;
+    margin-left: 100px;
+    position: relative;
+    top: -30px;
 }
 
 .visit-content .hours h4 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 32px;
+    font-family: 'Spectral', serif;
+    font-size: 42px;
+    font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 15px;
+    color: #ef0000;
+    margin-left: 90px;
 }
 
 .visit-content .hours p {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 8px;
-    font-weight: 400;
+    font-weight: 500;
+    font-style: italic;
+    color: #ffffff;
 }
 
 .visit-content .hours strong {
     font-weight: 700;
+    font-style: normal;
 }
 
 /* MARGARITAS SECTION */
 .margaritas {
     background: linear-gradient(135deg, #7FFF00 0%, #6BDB00 100%);
-    padding: 80px 50px;
+    padding: 48px 30px;
     position: relative;
     overflow: hidden;
 }
 
 .flores-margaritas {
     position: absolute;
-    bottom: 160px;
+    bottom: 15px;
     left: 0;
-    width: 500px;
+    width: 840px;
     height: auto;
     z-index: 100;
     pointer-events: none;
@@ -478,7 +503,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    min-height: 400px;
+    min-height: 240px;
     z-index: 2;
 }
 
@@ -497,7 +522,8 @@ body {
     color: white;
     margin-bottom: 0;
     line-height: 1;
-    margin-left: 70px;
+    margin-left: 120px;
+    margin-top: 80px;
 }
 
 .margaritas-content h1 {
@@ -507,7 +533,7 @@ body {
     color: white;
     letter-spacing: 4px;
     line-height: 1;
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 35px;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
 }
 
@@ -517,7 +543,16 @@ body {
     font-weight: 600;
     color: white;
     margin-top: 0;
-    margin-left: 110px;
+    margin-left: 170px;
+}
+
+.flores-margarita-text {
+    position: absolute;
+    width: 783px;
+    height: auto;
+    left: 130px;
+    bottom: -170px;
+    pointer-events: none;
 }
 
 .margaritas-images {
@@ -533,25 +568,24 @@ body {
     width: 720px;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
     mask-image: linear-gradient(
         to right,
-        rgba(0,0,0,0.6) 0%,
-        rgba(0,0,0,0.8) 15%,
-        rgba(0,0,0,1) 30%,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.3) 10%,
+        rgba(0,0,0,0.6) 20%,
+        rgba(0,0,0,0.9) 35%,
+        rgba(0,0,0,1) 50%,
         rgba(0,0,0,1) 100%
     );
     -webkit-mask-image: linear-gradient(
         to right,
-        rgba(0,0,0,0.6) 0%,
-        rgba(0,0,0,0.8) 15%,
-        rgba(0,0,0,1) 30%,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.3) 10%,
+        rgba(0,0,0,0.6) 20%,
+        rgba(0,0,0,0.9) 35%,
+        rgba(0,0,0,1) 50%,
         rgba(0,0,0,1) 100%
     );
-}
-
-.margarita-img:hover {
-    transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -645,27 +679,209 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 1024px) {
+
+/* Large Desktop - 1400px and up */
+@media (min-width: 1400px) {
+    .nav-container,
+    .hero-container,
+    .visit-container,
+    .margaritas-container,
+    .footer-container {
+        max-width: 1400px;
+    }
+}
+
+/* Desktop - 1200px to 1399px */
+@media (max-width: 1399px) {
+    .banderines {
+        width: 90%;
+    }
+
+    .flores-hero {
+        width: 800px;
+    }
+
+    .flores-visit {
+        width: 900px;
+    }
+
+    .flores-margaritas {
+        width: 700px;
+    }
+
+    .flores-margarita-text {
+        width: 650px;
+    }
+}
+
+/* Tablet Landscape - 1024px to 1199px */
+@media (max-width: 1199px) {
+    .nav-links {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .banderines {
+        width: 85%;
+        top: 50px;
+    }
+
+    .hero-content h2 {
+        font-size: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 100px;
+    }
+
+    .hero-content h3 {
+        font-size: 28px;
+    }
+
+    .flores-hero {
+        width: 700px;
+        top: -50px;
+    }
+
+    .visit-content {
+        margin-left: 400px;
+    }
+
+    .visit-content h2 {
+        margin-left: 150px;
+        font-size: 45px;
+    }
+
+    .visit-content h3 {
+        margin-left: 110px;
+        font-size: 38px;
+    }
+
+    .visit-content .address,
+    .visit-content .phone {
+        margin-left: 60px;
+        font-size: 18px;
+    }
+
+    .visit-content .hours {
+        margin-left: 70px;
+    }
+
+    .visit-content .hours h4 {
+        font-size: 38px;
+        margin-left: 60px;
+    }
+
+    .visit-content .hours p {
+        font-size: 20px;
+    }
+
+    .flores-visit {
+        width: 800px;
+    }
+
+    .margaritas-content h2 {
+        font-size: 56px;
+        margin-left: 100px;
+    }
+
+    .margaritas-content h1 {
+        font-size: 100px;
+        margin-left: 30px;
+    }
+
+    .margaritas-content h3 {
+        font-size: 42px;
+        margin-left: 140px;
+    }
+
+    .flores-margaritas {
+        width: 600px;
+    }
+
+    .flores-margarita-text {
+        width: 550px;
+        left: 110px;
+    }
+
+    .margarita-img {
+        width: 600px;
+    }
+}
+
+/* Tablet - 768px to 1023px */
+@media (max-width: 1023px) {
+    .navbar {
+        padding: 5px 30px 30px;
+    }
+
     .nav-links {
         gap: 20px;
-        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .banderines {
+        display: none;
+    }
+
+    .logo {
+        width: 220px;
+        height: 130px;
+    }
+
+    .hero {
+        min-height: auto;
     }
 
     .hero-container {
         grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 40px 20px;
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-content h2 {
+        font-size: 50px;
     }
 
     .hero-content h1 {
         font-size: 80px;
     }
 
+    .hero-content h3 {
+        font-size: 24px;
+    }
+
+    .flores-hero {
+        width: 500px;
+        top: -30px;
+    }
+
     .features-container {
         grid-template-columns: 1fr;
     }
 
+    .visit-us {
+        overflow: visible;
+    }
+
     .visit-container {
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
+        padding: 60px 30px;
+        min-height: auto;
     }
 
     .visit-image {
@@ -677,13 +893,92 @@ footer {
         margin-bottom: 40px;
     }
 
+    .visit-image::after {
+        display: none;
+    }
+
     .visit-image img {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
     }
 
     .visit-content {
         margin-left: 0;
+        text-align: center;
+    }
+
+    .visit-content h2,
+    .visit-content h3,
+    .visit-content .address,
+    .visit-content .phone,
+    .visit-content .hours,
+    .visit-content .hours h4 {
+        margin-left: 0;
+        position: static;
+        top: auto;
+    }
+
+    .visit-content h2 {
+        font-size: 48px;
+    }
+
+    .visit-content h3 {
+        font-size: 36px;
+    }
+
+    .visit-content .address {
+        font-size: 18px;
+    }
+
+    .visit-content .phone {
+        font-size: 22px;
+    }
+
+    .visit-content .hours h4 {
+        font-size: 36px;
+    }
+
+    .visit-content .hours p {
+        font-size: 20px;
+    }
+
+    .flores-visit {
+        width: 600px;
+        bottom: -300px;
+    }
+
+    .margaritas {
+        overflow: visible;
+    }
+
+    .margaritas-container {
+        min-height: auto;
+    }
+
+    .margaritas-content {
+        text-align: center;
+        margin-left: 0;
+        padding-bottom: 40px;
+    }
+
+    .margaritas-content h2,
+    .margaritas-content h1,
+    .margaritas-content h3 {
+        margin-left: 0;
+    }
+
+    .margaritas-content h2 {
+        font-size: 48px;
+        margin-top: 40px;
+    }
+
+    .margaritas-content h1 {
+        font-size: 80px;
+    }
+
+    .margaritas-content h3 {
+        font-size: 36px;
     }
 
     .margaritas-images {
@@ -696,8 +991,23 @@ footer {
     }
 
     .margarita-img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .flores-margaritas {
+        width: 500px;
+        bottom: 10px;
+    }
+
+    .flores-margarita-text {
         width: 400px;
-        height: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -180px;
     }
 
     .footer-nav {
@@ -705,52 +1015,220 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+/* Mobile - up to 767px */
+@media (max-width: 767px) {
     .navbar {
-        padding: 15px 20px;
+        padding: 10px 15px 20px;
+        margin-top: -15px;
+    }
+
+    .logo {
+        width: 180px;
+        height: 110px;
+    }
+
+    .nav-links-container {
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 9px;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+    }
+
+    .hero {
+        margin-top: -10px;
+    }
+
+    .hero-container {
+        padding: 30px 15px;
     }
 
     .hero-content {
-        padding: 40px 20px;
+        padding: 30px 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
     }
 
     .hero-content h1 {
         font-size: 60px;
     }
 
-    .hero-content h2 {
-        font-size: 32px;
-    }
-
     .hero-content h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
-    .visit-container {
-        padding: 60px 20px;
+    .flores-hero {
+        width: 350px;
+        top: -20px;
     }
 
-    .visit-content h2 {
-        font-size: 48px;
-    }
-
-    .visit-content h3 {
+    .feature-content h2 {
         font-size: 36px;
     }
 
-    .margaritas {
-        padding: 60px 20px;
+    .feature-content p {
+        font-size: 14px;
     }
 
-    .margaritas-content h1 {
-        font-size: 80px;
+    .visit-container {
+        padding: 40px 20px;
+    }
+
+    .visit-image img {
+        max-width: 300px;
+    }
+
+    .visit-content h2 {
+        font-size: 36px;
+    }
+
+    .visit-content h3 {
+        font-size: 28px;
+    }
+
+    .visit-content .address {
+        font-size: 16px;
+    }
+
+    .visit-content .phone {
+        font-size: 18px;
+    }
+
+    .visit-content .hours h4 {
+        font-size: 28px;
+    }
+
+    .visit-content .hours p {
+        font-size: 16px;
+    }
+
+    .flores-visit {
+        width: 400px;
+        bottom: -200px;
+    }
+
+    .margaritas {
+        padding: 30px 15px;
     }
 
     .margaritas-content h2 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    .margaritas-content h1 {
+        font-size: 60px;
+    }
+
+    .margaritas-content h3 {
+        font-size: 28px;
+    }
+
+    .flores-margaritas {
+        width: 350px;
+        bottom: 5px;
+    }
+
+    .flores-margarita-text {
+        width: 280px;
+        bottom: -140px;
+    }
+
+    .footer-nav {
+        gap: 15px;
+    }
+
+    .footer-nav a {
+        font-size: 10px;
+    }
+
+    .footer-logo-img {
+        width: 120px;
+    }
+
+    .footer-legal p {
+        font-size: 9px;
+    }
+}
+
+/* Small Mobile - up to 480px */
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+        padding: 5px 0;
+    }
+
+    .logo {
+        width: 150px;
+        height: 90px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
+    }
+
+    .flores-hero {
+        width: 250px;
+    }
+
+    .visit-content h2 {
+        font-size: 28px;
+    }
+
+    .visit-content h3 {
+        font-size: 24px;
+    }
+
+    .visit-content .hours h4 {
+        font-size: 24px;
+    }
+
+    .visit-content .hours p {
+        font-size: 14px;
+    }
+
+    .flores-visit {
+        width: 300px;
+    }
+
+    .margaritas-content h2 {
+        font-size: 28px;
+    }
+
+    .margaritas-content h1 {
         font-size: 48px;
     }
 
     .margaritas-content h3 {
-        font-size: 36px;
+        font-size: 24px;
+    }
+
+    .flores-margaritas {
+        width: 250px;
+    }
+
+    .flores-margarita-text {
+        width: 220px;
+        bottom: -100px;
     }
 }
