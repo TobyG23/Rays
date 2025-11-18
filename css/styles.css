@@ -32,6 +32,24 @@ body {
     z-index: 1000;
 }
 
+.banderines {
+    position: absolute;
+    top: 0;
+    width: 85%;
+    height: auto;
+    z-index: 1002;
+    pointer-events: none;
+    max-width: none;
+}
+
+.banderines-left {
+    left: 0;
+}
+
+.banderines-right {
+    right: 0;
+}
+
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -82,7 +100,7 @@ body {
 .logo {
     width: 300px;
     height: 180px;
-    background: url('rays-logo.png') center/contain no-repeat;
+    background: url('../images/rays-logo.png') center/contain no-repeat;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
@@ -92,6 +110,16 @@ body {
     position: relative;
     overflow: hidden;
     min-height: 500px;
+}
+
+.flores-hero {
+    position: absolute;
+    top: -75px;
+    right: 0;
+    width: 1000px;
+    height: auto;
+    z-index: 100;
+    pointer-events: none;
 }
 
 .hero-container {
@@ -152,6 +180,19 @@ body {
     font-style: italic;
     color: #dc2900;
     margin-top: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* DIVIDER */
+.divider {
+    width: 100%;
+    height: 90px;
+    background: white url('../images/division.png') repeat-x center;
+    background-size: auto 90px;
+}
+
+.divider img {
+    display: none;
 }
 
 /* FEATURES SECTION */
@@ -292,22 +333,14 @@ body {
     overflow: hidden;
 }
 
-/* Mexican pattern decoration */
-.visit-us::before {
-    content: '';
+.flores-visit {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: -205px;
     right: 0;
-    height: 40px;
-    background: repeating-linear-gradient(
-        90deg,
-        var(--yellow) 0px,
-        var(--yellow) 15px,
-        var(--red) 15px,
-        var(--red) 30px
-    );
-    z-index: 1;
+    width: 900px;
+    height: auto;
+    z-index: 100;
+    pointer-events: none;
 }
 
 .visit-container {
@@ -365,7 +398,7 @@ body {
     position: relative;
     z-index: 3;
     max-width: 500px;
-    margin-left: 550px;
+    margin-left: 590px;
 }
 
 .visit-content h2 {
@@ -374,6 +407,7 @@ body {
     letter-spacing: 3px;
     margin-bottom: 10px;
     color: white;
+    margin-left: 120px;
 }
 
 .visit-content h3 {
@@ -382,22 +416,26 @@ body {
     letter-spacing: 2px;
     margin-bottom: 30px;
     color: white;
+    margin-left: 120px;
 }
 
 .visit-content .address {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 500;
+    margin-left: 120px;
 }
 
 .visit-content .phone {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
+    margin-left: 120px;
 }
 
 .visit-content .hours {
     margin-top: 30px;
+    margin-left: 120px;
 }
 
 .visit-content .hours h4 {
@@ -425,24 +463,16 @@ body {
     overflow: hidden;
 }
 
-/* Decorative flowers */
-.margaritas::before,
-.margaritas::after {
-    content: '🌺';
+.flores-margaritas {
     position: absolute;
-    font-size: 120px;
-    opacity: 0.3;
+    bottom: 160px;
+    left: 0;
+    width: 500px;
+    height: auto;
+    z-index: 100;
+    pointer-events: none;
 }
 
-.margaritas::before {
-    top: 20px;
-    right: 50px;
-}
-
-.margaritas::after {
-    bottom: 20px;
-    left: 50px;
-}
 
 .margaritas-container {
     max-width: 1400px;
@@ -467,6 +497,7 @@ body {
     color: white;
     margin-bottom: 0;
     line-height: 1;
+    margin-left: 70px;
 }
 
 .margaritas-content h1 {
@@ -476,7 +507,7 @@ body {
     color: white;
     letter-spacing: 4px;
     line-height: 1;
-    margin: 10px 0;
+    margin: 10px 0 10px 10px;
     text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
 }
 
@@ -486,6 +517,7 @@ body {
     font-weight: 600;
     color: white;
     margin-top: 0;
+    margin-left: 110px;
 }
 
 .margaritas-images {

@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ray's Mexican Restaurant - Auténtica Comida Mexicana en Katy, TX</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
+        <img src="images/banderin-izquierdo.png" alt="Banderines" class="banderines banderines-left">
+        <img src="images/banderin-derecho.png" alt="Banderines" class="banderines banderines-right">
         <div class="nav-container">
             <div class="logo-container">
                 <div class="logo"></div>
@@ -30,14 +32,15 @@
 
     <!-- HERO SECTION -->
     <section class="hero">
+        <img src="images/flores-sup-der.png" alt="Flores decorativas" class="flores-hero">
         <div class="hero-container">
             <div class="hero-image">
-                <img src="camarones-adobados.png" alt="Camarones Adobados">
+                <img src="images/camarones-adobados.png" alt="Camarones Adobados">
             </div>
             <div class="hero-content">
                 <h2>Auténtico sabor</h2>
                 <h1>MEXICANO</h1>
-                <h3>Camarones Adobados</h3>
+                <h3 id="rotating-dish">Camarones Adobados</h3>
             </div>
         </div>
     </section>
@@ -47,7 +50,7 @@
         <div class="features-container">
             <div class="feature-card authentic">
                 <div class="feature-image">
-                    <img src="sizzlingfajitas.jpg" alt="Authentic">
+                    <img src="images/sizzlingfajitas.jpg" alt="Authentic">
                 </div>
                 <div class="feature-content">
                     <h2>AUTHENTIC</h2>
@@ -58,7 +61,7 @@
 
             <div class="feature-card delicious">
                 <div class="feature-image">
-                    <img src="churros.jpg" alt="Delicious">
+                    <img src="images/churros.jpg" alt="Delicious">
                 </div>
                 <div class="feature-content">
                     <h2>DELICIOUS</h2>
@@ -82,8 +85,9 @@
 
     <!-- VISIT US SECTION -->
     <section class="visit-us">
+        <img src="images/flores-inf-derecha.png" alt="Flores decorativas" class="flores-visit">
         <div class="visit-image">
-            <img src="action.jpg" alt="Mexican food" class="mirror-image">
+            <img src="images/action.jpg" alt="Mexican food" class="mirror-image">
         </div>
         <div class="visit-container">
             <div class="visit-content">
@@ -103,8 +107,9 @@
 
     <!-- MARGARITAS SECTION -->
     <section class="margaritas">
+        <img src="images/flores-inf-izq.png" alt="Flores decorativas" class="flores-margaritas">
         <div class="margaritas-images">
-            <img src="margaritas.jpg" alt="Margarita" class="margarita-img">
+            <img src="images/margaritas.jpg" alt="Margarita" class="margarita-img">
         </div>
         <div class="margaritas-container">
             <div class="margaritas-content">
@@ -128,7 +133,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="footer-logo">
-                    <img src="rays-logo.png" alt="Ray's" class="footer-logo-img">
+                    <img src="images/rays-logo.png" alt="Ray's" class="footer-logo-img">
                 </div>
                 <div class="footer-social">
                     <a href="#" class="social-icon" aria-label="Facebook">
@@ -153,5 +158,38 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Rotating dishes
+        const dishes = [
+            "Costillas de Puerco",
+            "Camarones Adobados",
+            "La Gratinada",
+            "Pollo con Rajas",
+            "Ray's Salad",
+            "Shrimp Cocktail",
+            "Street Tacos"
+        ];
+
+        let currentIndex = 1; // Start with "Camarones Adobados"
+        const dishElement = document.getElementById('rotating-dish');
+
+        function rotateDish() {
+            // Fade out
+            dishElement.style.opacity = '0';
+
+            setTimeout(() => {
+                // Change text
+                currentIndex = (currentIndex + 1) % dishes.length;
+                dishElement.textContent = dishes[currentIndex];
+
+                // Fade in
+                dishElement.style.opacity = '1';
+            }, 500); // Wait for fade out to complete
+        }
+
+        // Rotate every 3 seconds
+        setInterval(rotateDish, 3000);
+    </script>
 </body>
 </html>
