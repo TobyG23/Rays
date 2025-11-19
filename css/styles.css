@@ -588,6 +588,69 @@ body {
     );
 }
 
+/* ORDER TO-GO SECTION */
+.order-togo {
+    background: linear-gradient(135deg, #DC143C 0%, #B91230 100%);
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.order-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.order-container h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.order-container p {
+    font-family: 'Spectral', serif;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.delivery-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.platform-link {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+
+.platform-link:hover {
+    transform: translateY(-10px);
+    opacity: 0.9;
+}
+
+.platform-link img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.platform-dark {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.platform-dark img {
+    box-shadow: none;
+}
+
 /* FOOTER */
 footer {
     background: linear-gradient(135deg, #00CED1 0%, #00B4B8 100%);
@@ -1010,6 +1073,18 @@ footer {
         bottom: -180px;
     }
 
+    .order-container h2 {
+        font-size: 56px;
+    }
+
+    .order-container p {
+        font-size: 24px;
+    }
+
+    .platform-link img {
+        width: 180px;
+    }
+
     .footer-nav {
         gap: 20px;
     }
@@ -1142,6 +1217,27 @@ footer {
         bottom: -140px;
     }
 
+    .order-togo {
+        padding: 50px 20px;
+    }
+
+    .order-container h2 {
+        font-size: 48px;
+    }
+
+    .order-container p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .delivery-platforms {
+        gap: 30px;
+    }
+
+    .platform-link img {
+        width: 150px;
+    }
+
     .footer-nav {
         gap: 15px;
     }
@@ -1230,5 +1326,26 @@ footer {
     .flores-margarita-text {
         width: 220px;
         bottom: -100px;
+    }
+
+    .order-togo {
+        padding: 40px 15px;
+    }
+
+    .order-container h2 {
+        font-size: 36px;
+    }
+
+    .order-container p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .delivery-platforms {
+        gap: 20px;
+    }
+
+    .platform-link img {
+        width: 120px;
     }
 }
